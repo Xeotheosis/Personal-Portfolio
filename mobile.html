@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrei Neacsu | Front End Developer</title>
+    <link id="dark" rel="stylesheet" href="dark.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <h2 id="navbar__title">Andrei.dev</h2>
+      <div>
+        <i id="icon" class="fa-solid fa-sun fa-3x" style="color: #ffffff;"></i></div>
+      <ul id="navbar__list">
+        <li class="navbar__item link"><a class="list__link" href="#welcome__section">Home</a></li>
+        <li class="navbar__item link"><a class="list__link" href="#about__section">About</a></li>
+        <li class="navbar__item link">
+          <a class="list__link" href="#project__section">Projects</a>
+        </li>
+        <li class="navbar__item link">
+          <a class="list__link" href="#contact__section">Contact</a>
+        </li>
+        <li class="navbar__item menu"><i class="fa-solid fa-bars"></i></li>
+      </ul>
+    </nav>
+    <section id="welcome__section">
+      <div id="welcome__card">
+        <div id="welcome__text">
+          <h1>Hi. I'm Andrei</h1>
+          <p class="align__left">
+            I'm trying my best to learn web development and I aim to become a
+            Front End Developer.
+          </p>
+          <p class="align__left">Tech Stack</p>
+          <div id="welcome__icons">
+            <i data-aos="zoom-in-down" data-aos-delay="1000"class="fa-brands fa-html5 fa-4x"></i>
+            <hr />
+            <i data-aos="zoom-in-down" data-aos-delay="1100"class="fa-brands fa-css3-alt fa-4x"></i>
+            <hr />
+            <i data-aos="zoom-in-down" data-aos-delay="1200"class="fa-brands fa-js fa-4x"></i>
+            <hr>
+            <i data-aos="zoom-in-down" data-aos-delay="1300"class="fa-brands fa-react fa-4x"></i>
+          </div>
+        </div>
+        <div data-aos="zoom-in"
+        delay: 500ms
+        id="welcome__images">
+          <img
+            id="welcome__photo"
+            src="/images/ProfilePhoto.jpeg"
+            alt="Profile Photo"
+            draggable="false"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="welcome__chevron">
+        <a href="#about__section"
+          ><i
+            class="fa-solid fa-circle-chevron-down fa-3x"
+            style="--fa-animation-duration: 2.4s"
+          ></i
+        ></a>
+      </div>
+    </section>
+    <section 
+
+    data-aos="fade-up"
+    data-aos-offset="150"
+    id="about__section">
+        <div>
+            <img id="about__photo" src="/images/Desk.jpg" alt="Desk">
+        </div>
+        <div id="about__text">
+            <h3 id="about__h3">About Me</h3>
+            <h2>Front-End Developer Wannabe</h2>
+            <p class="align__left">The only way to gain experience is to work on specific projects, which is what I'm looking for. I've started learning code on January 26th 2023 and I look forward to learning React and creating projects with it.</p>
+        </div>
+    </section>
+    <section id="project__section">
+        <h3>Portfolio</h3>
+        <h2>Note: This page itself is a project.</h2>
+        <div data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="ease"
+        class ="project__card a">
+            <img class="project__image" src="/images/AstralEstates.png" alt="Landing Page">
+            <div class="project__text">
+            <h3>Astral Estates</h3>
+            <p class="align__left">Landing Page for a fictional company renting planets. I created this just to be one step ahead of the game.</p>
+            <button id="live1">Live Demo</button>
+            </div>
+            </div>
+        <div data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="ease"
+        class="project__card b">
+            <img class="project__image" src="/images/News.png" alt="Landing Page">
+            <div class="project__text">
+            <h3>Simple News Homepage</h3>
+            <p class="align__right">A FrontEnd Mentor Challenge, responsive for mobile devices, made with flexbox and grid displays.</p>
+            <button id="live2">Live Demo</button>
+        </div>
+            </div>
+  
+    </section>
+    <section id="contact__section">
+        <div class="project__card">
+            <h3>Hit me up!</h3>
+            <div id="contact__icons">
+                <a href="mailto:neacsu.andrei.ro@icloud.com" target="_blank"><i class="fa-solid fa-envelope icon"></i></a>
+                <a href="https://www.linkedin.com/in/andrei-neac%C5%9Fu-935129196
+                " target="_blank"><i class="fa-brands fa-linkedin-in icon"></i></a>
+                <a href="https://www.instagram.com/andrei.neacsu98/" target="_blank"><i class="fa-brands fa-instagram icon"></i></a>
+            </div>
+        </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/b99b8c5152.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>
