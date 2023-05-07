@@ -29,6 +29,29 @@ icon.addEventListener("click", function toggleIcon() {
   
   var website1 = document.getElementById("live2");
 
-  live2.addEventListener("click", function redirect(){
+  website1.addEventListener("click", function redirect(){
     window.open("https://xeotheosis.github.io/Frontend-Challenge-3/", "_blank");
-  })
+  });
+
+  
+
+  var menu = document.querySelector("#menu__icon");
+  var bar = document.querySelector("#mobile__menu");
+  var ecs = document.querySelector("#ECS");
+  
+  menu.addEventListener('click',()=>{
+   bar.classList.add('show');
+  });
+  
+  ecs.addEventListener('click', ()=>{
+    bar.classList.remove('show');
+  });
+  
+  var list = document.getElementsByClassName("mobile__item");
+  
+  for (var i = 0; i < list.length; i++) {
+    list[i].addEventListener('click', ()=> {
+      bar.classList.remove('show');
+    });
+  }
+  
